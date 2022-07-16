@@ -8,7 +8,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class PokemonService {
 
-  pokemon= [];
+  pokemons =[];
 
   constructor(public httpClient: HttpClient) { 
 
@@ -19,6 +19,6 @@ export class PokemonService {
       .get<any>('https://pokeapi.co/api/v2/pokemon?limit=151')
       .toPromise();
 
-    this.pokemon = requisicao.results;
+    this.pokemons = requisicao.results;
   }
 }

@@ -9,7 +9,7 @@ export class PokemonCardComponent  {
   
   @Input()
 
-  pokemon: string;
+  Pokemon: string;
 
   @Input()
 
